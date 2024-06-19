@@ -5,8 +5,6 @@
   <p align="center"><strong>Простая сборка на Gulp</strong></p>
 </p>
 
-[![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url] [![Build Status][ci-image]][ci-url] [![Coveralls Status][coveralls-image]][coveralls-url]
-
 ****
 ## Функционал сборки:
 + Минификация HTML  
