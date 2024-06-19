@@ -56,7 +56,8 @@
 - ["gulp-fonter"](https://www.npmjs.com/package/gulp-fonter): Конвертация шрифтов в .tff и woff форматы  
 - ["gulp-htmlmin"](https://www.npmjs.com/package/gulp-htmlmin): Минификация HTML файлов  
 - ["gulp-imagemin"](https://www.npmjs.com/package/gulp-imagemin): Сжатие изображений  
-- ["gulp-newer"](https://www.npmjs.com/package/gulp-newer): Отслеживание только новых файлов   
+- ["gulp-newer"](https://www.npmjs.com/package/gulp-newer): Отслеживание только новых файлов
+- ["gulp-flatten"](https://www.npmjs.com/package/gulp-flatten): Удаление или заменена пути к файлам  
 - ["gulp-rename"](https://www.npmjs.com/package/gulp-rename): Переименование файлов   
 - ["gulp-sass"](https://www.npmjs.com/package/gulp-sass): Компиляция Sass и Scss файлов  
 - ["gulp-size"](https://www.npmjs.com/search?q=gulp-size): Отображение информации о размерах файлов в терминале  
