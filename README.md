@@ -36,7 +36,7 @@ To avoid all kinds of errors, you need to install gulp globally, but this is in 
 Also install the Git version control system. Git is not required for the assembly to work, but for ease of installation and further development, it is better to install it anyway.
 
 1. Create a project folder    
-2. Run the git clone command in it: ``` ``` (or download the build as an archive.zip and unzip)   
+2. Run the git clone command in it: ```git clone https://github.com/Shipy4kaRU/gulp-build-2024.git``` (or download the build as an archive.zip and unzip)   
 3. After all the sources have been downloaded from the remote repository, enter the command in the console: npm i (node must be installed for this.js)   
 4. Create directories and files according to the project structure   
 5. Run the command: gulp (run the default task)   
