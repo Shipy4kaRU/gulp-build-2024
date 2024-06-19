@@ -56,7 +56,8 @@ Also install the Git version control system. Git is not required for the assembl
 - ["gulp-fonter"](https://www.npmjs.com/package/gulp-fonter): Converting fonts to .ttf and woff formats  
 - ["gulp-htmlmin"](https://www.npmjs.com/package/gulp-htmlmin): Minification of HTML files  
 - ["gulp-imagemin"](https://www.npmjs.com/package/gulp-imagemin): Image Compression  
-- ["gulp-newer"](https://www.npmjs.com/package/gulp-newer): Tracking only new files   
+- ["gulp-newer"](https://www.npmjs.com/package/gulp-newer): Tracking only new files  
+- ["gulp-flatten"](https://www.npmjs.com/package/gulp-flatten): Remove or replace relative path for files  
 - ["gulp-rename"](https://www.npmjs.com/package/gulp-rename): Renaming files   
 - ["gulp-sass"](https://www.npmjs.com/package/gulp-sass): Compilation of Sass and Scss files  
 - ["gulp-size"](https://www.npmjs.com/search?q=gulp-size): Displaying information about file sizes in the terminal  
