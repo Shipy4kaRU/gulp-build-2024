@@ -4,8 +4,8 @@
   </a>
   <p align="center"><strong>Easy assembly for Gulp</strong></p>
 </p>
-
 ****
+
 ## Assembly functionality:
 + HTML minification  
 + Compilation of the CSS preprocessor  
@@ -23,13 +23,13 @@
 + Local server with automatic page refresh when files change  
 + Creation .zip archive of the project  
 + Starting template index.html with attached style file, normalize.css and a js file connected for a quick start of layout
-****
+
 ## The structure of the src project folder:
 ![Изображение](./src-diagram.png "Логотип Markdown")  
 
 ## The structure of the dist project folder:
 ![Изображение](./dist-diagram.png "Логотип Markdown")  
-****
+
 ## Starting the build:    
 For the assembly to work, you will need to download and install node.js .   
 To avoid all kinds of errors, you need to install gulp globally, but this is in case you haven't done this in other projects yet: ```npm i gulp -g```. This procedure is done once and the next time you deploy a new project, you will not need to repeat this command.       
@@ -41,7 +41,7 @@ Also install the Git version control system. Git is not required for the assembl
 4. Create directories and files according to the project structure   
 5. Run the command: gulp (run the default task)   
 6. Coding and enjoying the automatic build of the project.
-****
+
 ## NPM packages used:  
 - ["@babel/core"](https://www.npmjs.com/package/@babel/core): The core of Babel   
 - ["@babel/preset-env"](https://www.npmjs.com/package/@babel/preset-env): Preset for Babel compilation  
@@ -64,7 +64,7 @@ Also install the Git version control system. Git is not required for the assembl
 - ["gulp-uglify"](https://www.npmjs.com/package/gulp-uglify): Compression and optimization of JavaScript code  
 - ["gulp-zip"](https://www.npmjs.com/package/gulp-zip): Creation.zip archive  
 - ["sass"](https://www.npmjs.com/package/sass): The Sass compiler  
-****
+
 ## Build Commands:   
 + ```gulp```: processes html, css, and js files, optimizes new photos, and transfers everything to the **dist/**  folder
 + ```gulp fonts```: converts fonts in woff,woff2 format and transfers it all to the **dist/fonts/** folder  
