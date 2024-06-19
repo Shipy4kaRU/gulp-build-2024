@@ -70,3 +70,4 @@ Also install the Git version control system. Git is not required for the assembl
 + ```gulp```: processes html, css, and js files, optimizes new photos, and transfers everything to the **dist/**  folder
 + ```gulp fonts```: converts fonts in woff,woff2 format and transfers it all to the **dist/fonts/** folder  
 + ```gulp zip```: creates .the zip archive of the dist folder (the name is taken from the main folder of the project) and places it in the main folder of the project on an equal footing with the folders dist and src.  
+****
