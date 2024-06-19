@@ -32,7 +32,7 @@
 ****
 ## Starting the build:    
 For the assembly to work, you will need to download and install node.js .   
-To avoid all kinds of errors, you need to install gulp globally, but this is in case you haven't done this in other projects yet: ``npm i gulp -g`'. This procedure is done once and the next time you deploy a new project, you will not need to repeat this command.       
+To avoid all kinds of errors, you need to install gulp globally, but this is in case you haven't done this in other projects yet: ```npm i gulp -g```. This procedure is done once and the next time you deploy a new project, you will not need to repeat this command.       
 Also install the Git version control system. Git is not required for the assembly to work, but for ease of installation and further development, it is better to install it anyway.
 
 1. Create a project folder    
