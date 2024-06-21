@@ -18,6 +18,7 @@ global.app = {
 import {html} from "./gulp/tasks/html.js"
 import {clean} from "./gulp/tasks/clean.js";
 import {styles} from "./gulp/tasks/styles.js";
+import {normilize} from "./gulp/tasks/styles.js";
 import {scripts} from "./gulp/tasks/scripts.js";
 import {img} from "./gulp/tasks/img.js";
 import {watch} from "./gulp/tasks/watch.js";
@@ -28,7 +29,7 @@ import {exportFonts} from "./gulp/tasks/fonts.js";
 import {zipRun} from "./gulp/tasks/zip.js";
 
 //Выполнение сценария по умолчанию
-gulp.task('default', gulp.series (clean, gulp.parallel(html, styles, scripts, img), watch));
+gulp.task('default', gulp.series (clean, normilize, gulp.parallel(html, styles, scripts, img), watch));
 
 //Сценарий обработки шрифтов
 gulp.task('fonts', gulp.series(cleanFonts,otfConvert, ttfConvert, exportFonts))

@@ -24,3 +24,8 @@ export function styles(){
     .pipe (app.gulp.dest(app.path.dist.styles))
     .pipe(browsersync.stream())
 }
+
+export function normilize(){
+  return app.gulp.src(app.path.src.normilize)
+  .pipe(app.gulp.dest(app.path.dist.styles))
+}
