@@ -64,7 +64,7 @@ Also install the Git version control system. Git is not required for the assembl
 - ["gulp-sourcemaps"](https://www.npmjs.com/package/gulp-sourcemaps): A code line map for developer tools  
 - ["gulp-ttf2woff2"](https://www.npmjs.com/package/gulp-ttf2woff2): Converting fonts from .ttf format to woff2   
 - ["gulp-uglify"](https://www.npmjs.com/package/gulp-uglify): Compression and optimization of JavaScript code  
-- ["gulp-zip"](https://www.npmjs.com/package/gulp-zip): Creation.zip archive  
+- ["gulp-zip"](https://www.npmjs.com/package/gulp-zip): Creation a .zip archive  
 - ["sass"](https://www.npmjs.com/package/sass): The Sass compiler  
 
 ## Build Commands:   
