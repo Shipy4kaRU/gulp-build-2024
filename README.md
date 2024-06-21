@@ -5,9 +5,8 @@
   <p align="center"><strong>Easy assembly for Gulp</strong></p>
 </p>
 
-[![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url] [![Build Status][ci-image]][ci-url] [![Coveralls Status][coveralls-image]][coveralls-url]
-
 ****
+
 ## Assembly functionality:
 + HTML minification  
 + Compilation of the CSS preprocessor  
@@ -25,25 +24,25 @@
 + Local server with automatic page refresh when files change  
 + Creation .zip archive of the project  
 + Starting template index.html with attached style file, normalize.css and a js file connected for a quick start of layout
-****
+
 ## The structure of the src project folder:
 ![Изображение](./src-diagram.png "Логотип Markdown")  
 
 ## The structure of the dist project folder:
 ![Изображение](./dist-diagram.png "Логотип Markdown")  
-****
+
 ## Starting the build:    
 For the assembly to work, you will need to download and install node.js .   
-To avoid all kinds of errors, you need to install gulp globally, but this is in case you haven't done this in other projects yet: ``npm i gulp -g`'. This procedure is done once and the next time you deploy a new project, you will not need to repeat this command.       
+To avoid all kinds of errors, you need to install gulp globally, but this is in case you haven't done this in other projects yet: ```npm i gulp -g```. This procedure is done once and the next time you deploy a new project, you will not need to repeat this command.       
 Also install the Git version control system. Git is not required for the assembly to work, but for ease of installation and further development, it is better to install it anyway.
 
 1. Create a project folder    
-2. Run the git clone command in it: ``` ``` (or download the build as an archive.zip and unzip)   
-3. After all the sources have been downloaded from the remote repository, enter the command in the console: npm i (node must be installed for this.js)   
+2. Run the git clone command in it: ```git clone https://github.com/Shipy4kaRU/gulp-build-2024.git``` (or download the build as an .zip archive and unzip)   
+3. After all the sources have been downloaded from the remote repository, enter the command in the console: npm i (node.js must be installed for this)   
 4. Create directories and files according to the project structure   
 5. Run the command: gulp (run the default task)   
 6. Coding and enjoying the automatic build of the project.
-****
+
 ## NPM packages used:  
 - ["@babel/core"](https://www.npmjs.com/package/@babel/core): The core of Babel   
 - ["@babel/preset-env"](https://www.npmjs.com/package/@babel/preset-env): Preset for Babel compilation  
@@ -57,7 +56,8 @@ Also install the Git version control system. Git is not required for the assembl
 - ["gulp-fonter"](https://www.npmjs.com/package/gulp-fonter): Converting fonts to .ttf and woff formats  
 - ["gulp-htmlmin"](https://www.npmjs.com/package/gulp-htmlmin): Minification of HTML files  
 - ["gulp-imagemin"](https://www.npmjs.com/package/gulp-imagemin): Image Compression  
-- ["gulp-newer"](https://www.npmjs.com/package/gulp-newer): Tracking only new files   
+- ["gulp-newer"](https://www.npmjs.com/package/gulp-newer): Tracking only new files  
+- ["gulp-flatten"](https://www.npmjs.com/package/gulp-flatten): Remove or replace relative path for files  
 - ["gulp-rename"](https://www.npmjs.com/package/gulp-rename): Renaming files   
 - ["gulp-sass"](https://www.npmjs.com/package/gulp-sass): Compilation of Sass and Scss files  
 - ["gulp-size"](https://www.npmjs.com/search?q=gulp-size): Displaying information about file sizes in the terminal  
@@ -66,8 +66,9 @@ Also install the Git version control system. Git is not required for the assembl
 - ["gulp-uglify"](https://www.npmjs.com/package/gulp-uglify): Compression and optimization of JavaScript code  
 - ["gulp-zip"](https://www.npmjs.com/package/gulp-zip): Creation.zip archive  
 - ["sass"](https://www.npmjs.com/package/sass): The Sass compiler  
-****
+
 ## Build Commands:   
 + ```gulp```: processes html, css, and js files, optimizes new photos, and transfers everything to the **dist/**  folder
 + ```gulp fonts```: converts fonts in woff,woff2 format and transfers it all to the **dist/fonts/** folder  
 + ```gulp zip```: creates .the zip archive of the dist folder (the name is taken from the main folder of the project) and places it in the main folder of the project on an equal footing with the folders dist and src.  
+****
