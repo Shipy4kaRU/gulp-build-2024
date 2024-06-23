@@ -38,7 +38,7 @@ Also install the Git version control system. Git is not required for the assembl
 
 1. Create a project folder    
 2. Run the git clone command in it: ```git clone https://github.com/Shipy4kaRU/gulp-build-2024.git``` (or download the build as an .zip archive and unzip)   
-3. After all the sources have been downloaded from the remote repository, enter the command in the console: npm i (node.js must be installed for this)   
+3. After all the sources have been downloaded from the remote repository, enter the command in the console: ```npm i``` (node.js must be installed for this)   
 4. Create directories and files according to the project structure   
 5. Run the command: gulp (run the default task)   
 6. Coding and enjoying the automatic build of the project.
