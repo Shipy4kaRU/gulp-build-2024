@@ -3,8 +3,9 @@
     <img height="257" width="114" src="https://raw.githubusercontent.com/gulpjs/artwork/master/gulp-2x.png">
   </a>
   <p align="center"><strong>Easy assembly for Gulp</strong></p>
+</p>   
+ <p align="center">Can be used as a basis for creating your own assembly</p>
 </p>
-
 ****
 
 ## Assembly functionality:
