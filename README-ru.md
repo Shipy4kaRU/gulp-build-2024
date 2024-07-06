@@ -3,6 +3,8 @@
     <img height="257" width="114" src="https://raw.githubusercontent.com/gulpjs/artwork/master/gulp-2x.png">
   </a>
   <p align="center"><strong>Простая сборка на Gulp</strong></p>
+</p>. 
+<p align="center">Может использоваться как основа для составления собственной сборки</p>
 </p>
 
 ****
