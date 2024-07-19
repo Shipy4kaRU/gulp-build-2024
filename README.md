@@ -3,6 +3,8 @@
     <img height="257" width="114" src="https://raw.githubusercontent.com/gulpjs/artwork/master/gulp-2x.png">
   </a>
   <p align="center"><strong>Easy assembly for Gulp</strong></p>
+</p>   
+ <p align="center">Can be used as a basis for creating your own assembly</p>
 </p>
 
 ****
@@ -38,7 +40,7 @@ Also install the Git version control system. Git is not required for the assembl
 
 1. Create a project folder    
 2. Run the git clone command in it: ```git clone https://github.com/Shipy4kaRU/gulp-build-2024.git``` (or download the build as an .zip archive and unzip)   
-3. After all the sources have been downloaded from the remote repository, enter the command in the console: npm i (node.js must be installed for this)   
+3. After all the sources have been downloaded from the remote repository, enter the command in the console: ```npm i``` (node.js must be installed for this)   
 4. Create directories and files according to the project structure   
 5. Run the command: gulp (run the default task)   
 6. Coding and enjoying the automatic build of the project.
@@ -64,7 +66,7 @@ Also install the Git version control system. Git is not required for the assembl
 - ["gulp-sourcemaps"](https://www.npmjs.com/package/gulp-sourcemaps): A code line map for developer tools  
 - ["gulp-ttf2woff2"](https://www.npmjs.com/package/gulp-ttf2woff2): Converting fonts from .ttf format to woff2   
 - ["gulp-uglify"](https://www.npmjs.com/package/gulp-uglify): Compression and optimization of JavaScript code  
-- ["gulp-zip"](https://www.npmjs.com/package/gulp-zip): Creation.zip archive  
+- ["gulp-zip"](https://www.npmjs.com/package/gulp-zip): Creation a .zip archive  
 - ["sass"](https://www.npmjs.com/package/sass): The Sass compiler  
 
 ## Build Commands:   
