@@ -19,6 +19,7 @@ export const path = {
     normilize: `${srcFolder}/styles/normalize.css`,
     scripts: `${srcFolder}/scripts/**/*.js`,
     images: `${srcFolder}/img/**/*.{jpg,png,svg,gif,ico,webp}`,
+    imagesWebp: `${srcFolder}/img/**/*.{jpg,jpeg,png}`,
     fonts: `${srcFolder}/fonts/`,
   },
 };

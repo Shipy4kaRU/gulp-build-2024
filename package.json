@@ -30,6 +30,7 @@
     "gulp-sourcemaps": "^3.0.0",
     "gulp-ttf2woff2": "^4.0.1",
     "gulp-uglify": "^3.0.2",
+    "gulp-webp": "^5.0.0",
     "gulp-zip": "^6.0.0",
     "sass": "^1.77.6"
   }
