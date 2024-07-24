@@ -18,6 +18,7 @@ export function watch() {
   app.gulp.watch(app.path.dist.html).on("change", browsersync.reload);
   app.gulp.watch(app.path.src.html, html);
   app.gulp.watch(app.path.src.styles, styles);
+  app.gulp.watch(app.path.src.allstyles, styles);
   app.gulp.watch(app.path.src.scripts, scripts);
   app.gulp.watch(app.path.src.images, img);
 }

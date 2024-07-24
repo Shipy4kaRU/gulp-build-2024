@@ -35,7 +35,7 @@ gulp.task(
   gulp.series(
     clean,
     normilize,
-    gulp.parallel(html, styles, scripts, img),
+    gulp.parallel(html, styles, scripts, img, webpRun),
     watch
   )
 );
