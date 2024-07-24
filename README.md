@@ -19,6 +19,7 @@
 - JavaScript minification
 - Combining multiple JavaScript files into one
 - Image compression
+- Convert images to .webp format
 - Tracking new images that haven't been compressed yet
 - Font conversion to woff, woff 2 formats
 - Tracking changes in files and automatically starting the reassembly
