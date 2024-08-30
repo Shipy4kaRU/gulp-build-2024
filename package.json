@@ -10,8 +10,8 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@babel/core": "^7.24.7",
-    "@babel/preset-env": "^7.24.7",
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.4",
     "browser-sync": "^3.0.2",
     "del": "^7.1.0",
     "gulp": "^5.0.0",
@@ -28,10 +28,10 @@
     "gulp-sass": "^5.1.0",
     "gulp-size": "^5.0.0",
     "gulp-sourcemaps": "^3.0.0",
-    "gulp-ttf2woff2": "^4.0.1",
+    "gulp-ttf2woff2": "^5.0.0",
     "gulp-uglify": "^3.0.2",
     "gulp-webp": "^5.0.0",
     "gulp-zip": "^6.0.0",
-    "sass": "^1.77.6"
+    "sass": "^1.77.8"
   }
 }
