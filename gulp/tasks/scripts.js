@@ -11,13 +11,19 @@ export function scripts() {
     .pipe(sourcemaps.init())
     .pipe(
       babel({
-        presets: ["@babel/env"],
+        presets: [
+          [
+            "@babel/preset-env",
+            {
+              modules: false, // Отключаем преобразование модулей
+            },
+          ],
+        ],
       })
     )
     .pipe(uglify())
-    .pipe(concat("main.min.js"))
     .pipe(size())
-    .pipe(sourcemaps.write("./"))
+    .pipe(sourcemaps.write(".", { includeContent: true }))
     .pipe(app.gulp.dest(app.path.dist.scripts))
     .pipe(browsersync.stream());
 }

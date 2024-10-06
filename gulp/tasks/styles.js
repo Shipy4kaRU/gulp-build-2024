@@ -25,7 +25,30 @@ export function styles() {
     )
     .pipe(rename("styles.min.css"))
     .pipe(size())
-    .pipe(sourcemaps.write("./"))
+    .pipe(sourcemaps.write(".", { includeContent: true }))
+    .pipe(app.gulp.dest(app.path.dist.styles))
+    .pipe(browsersync.stream());
+}
+
+export function colorTheme() {
+  return app.gulp
+    .src(app.path.src.styleTheme)
+    .pipe(sass().on("error", sass.logError))
+    .pipe(
+      cleanCSS({
+        level: {
+          1: {
+            specialComments: 0, //очистка комментариев
+          },
+          2: {
+            removeDuplicateRules: true,
+            removeUnusedAtRules: false, // не удалять неиспользуемые @-правила
+            removeUnusedDeclarations: false, // не удалять неиспользуемые декларации (потому что по умолчанию стирает неиспользованные пользовательские свойства)
+          },
+        },
+      })
+    )
+    .pipe(sourcemaps.write())
     .pipe(app.gulp.dest(app.path.dist.styles))
     .pipe(browsersync.stream());
 }

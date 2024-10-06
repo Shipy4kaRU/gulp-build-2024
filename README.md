@@ -28,6 +28,8 @@
 - Local server with automatic page refresh when files change
 - Creation .zip archive of the project
 - Starting template index.html with attached style file, normalize.css and a js file connected for a quick start of layout
+- ES6 modules support
+- Adding a theme (dark/light) support
 
 ## The structure of the src project folder:
 

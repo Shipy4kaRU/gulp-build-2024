@@ -6,8 +6,51 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="./css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="./css/styles.min.css" />
+
+    <!-- Поддержка смены темы -->
+
+    <meta name="color-scheme" content="light dark" />
+
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme : dark)"
+      content="#fff"
+    />
+    <!-- Измените content на цвет своего усредненного background -->
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme : light)"
+      content="#000"
+    />
+    <!-- Измените content на цвет своего усредненного background -->
+
+    <link
+      id="darkTheme"
+      rel="stylesheet"
+      type="text/css"
+      href="./css/dark-theme.css"
+      media="(prefers-color-scheme : dark)"
+    />
+    <link
+      id="lightTheme"
+      rel="stylesheet"
+      type="text/css"
+      href="./css/light-theme.css"
+      media="(prefers-color-scheme : light)"
+    />
+
+    <!-- Скрипт для кроссбраузерности: проверка MediaQueryList на поддержку тем-->
+    <script defer>
+      if (matchMedia("(prefers-color-scheme: dark)").media === "not all") {
+        document.documentElement.style.display = "none";
+        document.head.insertAdjacentHTML(
+          "beforeend",
+          '<link rel="stylesheet" href="./css/light-theme.css" onload="document.documentElement.style.display=\'\'">'
+        );
+      }
+    </script>
   </head>
   <body>
-    <script src="./js/main.min.js"></script>
+    <script src="./js/main.min.js" defer></script>
   </body>
 </html>

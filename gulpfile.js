@@ -28,6 +28,7 @@ import { ttfConvert } from "./gulp/tasks/fonts.js";
 import { exportFonts } from "./gulp/tasks/fonts.js";
 import { zipRun } from "./gulp/tasks/zip.js";
 import { webpRun } from "./gulp/tasks/webp.js";
+import { colorTheme } from "./gulp/tasks/styles.js";
 
 //Выполнение сценария по умолчанию
 gulp.task(
@@ -35,7 +36,7 @@ gulp.task(
   gulp.series(
     clean,
     normilize,
-    gulp.parallel(html, styles, scripts, img, webpRun),
+    gulp.parallel(html, styles, colorTheme, scripts, img, webpRun),
     watch
   )
 );
