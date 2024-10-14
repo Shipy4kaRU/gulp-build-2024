@@ -12,6 +12,7 @@ export const path = {
     scripts: `${distFolder}/js/`,
     images: `${distFolder}/img/`,
     fonts: `${distFolder}/fonts/`,
+    kss: `${distFolder}/kss/`,
   },
   src: {
     html: `${srcFolder}/*.html`,
