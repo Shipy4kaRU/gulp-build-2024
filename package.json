@@ -12,9 +12,10 @@
   "devDependencies": {
     "@babel/core": "^7.25.2",
     "@babel/preset-env": "^7.25.4",
+    "@hidoo/gulp-task-build-styleguide-kss": "^0.19.0",
     "browser-sync": "^3.0.2",
     "del": "^7.1.0",
-    "gulp": "^5.0.0",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "^9.0.0",
     "gulp-babel": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
@@ -23,7 +24,6 @@
     "gulp-fonter": "^0.3.0",
     "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^9.1.0",
-    "gulp-kss": "^0.0.2",
     "gulp-newer": "^1.4.0",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.1.0",
@@ -33,6 +33,7 @@
     "gulp-uglify": "^3.0.2",
     "gulp-webp": "^5.0.0",
     "gulp-zip": "^6.0.0",
+    "kss": "^3.1.0",
     "sass": "^1.78.0"
   }
 }

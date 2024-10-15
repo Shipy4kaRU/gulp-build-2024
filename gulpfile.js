@@ -1,12 +1,12 @@
-//Импорт модулей
+// Импорт модулей
 import gulp from "gulp";
 
-//Импорт путей
+// Импорт путей
 import { path } from "./gulp/config/path.js";
 import { distFolder } from "./gulp/config/path.js";
 import { srcFolder } from "./gulp/config/path.js";
 
-//Передача значений в глобальную переменную
+// Передача значений в глобальную переменную
 global.app = {
   path: path,
   gulp: gulp,
@@ -14,7 +14,7 @@ global.app = {
   srcFolder: srcFolder,
 };
 
-//Импорт задач
+// Импорт задач
 import { html } from "./gulp/tasks/html.js";
 import { clean } from "./gulp/tasks/clean.js";
 import { styles } from "./gulp/tasks/styles.js";
@@ -31,26 +31,28 @@ import { webpRun } from "./gulp/tasks/webp.js";
 import { colorTheme } from "./gulp/tasks/styles.js";
 import { kssConverter } from "./gulp/tasks/kss.js";
 
-//Выполнение сценария по умолчанию
+// Выполнение сценария по умолчанию
 gulp.task(
   "default",
   gulp.series(
     clean,
     normilize,
     gulp.parallel(html, styles, colorTheme, scripts, img, webpRun),
-    kssConverter,
     watch
   )
 );
 
-//Сценарий обработки шрифтов
+// Сценарий обработки шрифтов
 gulp.task(
   "fonts",
   gulp.series(cleanFonts, otfConvert, ttfConvert, exportFonts)
 );
 
-//Cценарий архивирования готовой версии проекта
+// Сценарий архивирования готовой версии проекта
 gulp.task("zip", zipRun);
 
-//Сценарий конвертации изображений в формат .webp
+// Сценарий конвертации изображений в формат .webp
 gulp.task("webp", webpRun);
+
+// Регистрация задачи KSS
+gulp.task("kss", kssConverter);
