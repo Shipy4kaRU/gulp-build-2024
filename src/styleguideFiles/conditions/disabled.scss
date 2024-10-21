@@ -1,0 +1,14 @@
+/*
+Disabled
+
+Класс неактивности для кнопок или других элементов интерфейса. Делает их слегка прозрачными и делает курсор обычным. Помимо него нужно установить :hover и :active для элемента с изначальными элемента, чтобы он не менялся.
+
+Markup:
+<button class="disabled">Кнопка</button>
+
+Styleguide Condition.disabled
+*/
+.disabled {
+  cursor: default;
+  opacity: 0.4;
+}

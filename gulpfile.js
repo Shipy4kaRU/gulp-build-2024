@@ -30,6 +30,7 @@ import { zipRun } from "./gulp/tasks/zip.js";
 import { webpRun } from "./gulp/tasks/webp.js";
 import { colorTheme } from "./gulp/tasks/styles.js";
 import { kssConverter } from "./gulp/tasks/kss.js";
+import { startKssLiveserver } from "./gulp/tasks/kss.js";
 
 // Выполнение сценария по умолчанию
 gulp.task(
@@ -37,7 +38,16 @@ gulp.task(
   gulp.series(
     clean,
     normilize,
-    gulp.parallel(html, styles, colorTheme, scripts, img, webpRun),
+    kssConverter,
+    gulp.parallel(
+      html,
+      styles.bind(this, path.src.styles, path.dist.styles),
+      colorTheme,
+      scripts,
+      img,
+      webpRun
+    ),
+    startKssLiveserver,
     watch
   )
 );

@@ -1,16 +1,18 @@
 import cleanCSS from "gulp-clean-css";
 import sourcemaps from "gulp-sourcemaps";
 import autoprefixer from "gulp-autoprefixer";
-import rename from "gulp-rename";
+//import rename from "gulp-rename";
+import concat from "gulp-concat";
 import size from "gulp-size";
 import browsersync from "browser-sync";
 import * as dartSass from "sass";
 import gulpSass from "gulp-sass";
+import replace from "gulp-replace";
 const sass = gulpSass(dartSass);
 
-export function styles() {
+export function styles(src, dist) {
   return app.gulp
-    .src(app.path.src.styles)
+    .src(src)
     .pipe(sourcemaps.init())
     .pipe(sass().on("error", sass.logError))
     .pipe(
@@ -23,10 +25,11 @@ export function styles() {
         level: 2,
       })
     )
-    .pipe(rename("styles.min.css"))
+    .pipe(replace(/@charset "UTF-8";\s*/g, ""))
+    .pipe(concat("styles.min.css"))
     .pipe(size())
     .pipe(sourcemaps.write(".", { includeContent: true }))
-    .pipe(app.gulp.dest(app.path.dist.styles))
+    .pipe(app.gulp.dest(dist))
     .pipe(browsersync.stream());
 }
 

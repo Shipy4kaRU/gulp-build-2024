@@ -1,0 +1,25 @@
+/*
+Класс clearfix
+
+Назначьте элементу класс clearfix для сброса обтекания плавающего контента.
+
+Markup:
+<div class="clearfix">
+  <span class="float-right">floated (я справа)</span>
+</div>
+
+Styleguide Condition.clearfix
+*/
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+.float-right {
+  float: right;
+}

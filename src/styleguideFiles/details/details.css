@@ -1,0 +1,218 @@
+@charset "UTF-8";
+/*
+Details
+
+Details — это HTML-элемент, который позволяет создавать интерактивные элементы на веб-странице, которые могут быть раскрыты или скрыты пользователем. Он часто используется для отображения дополнительной информации, которая не требуется сразу, но может быть полезна при необходимости.
+
+Markup:
+<section class="main__features features" id="features">
+  <div class="features__subsection feature feature-side">
+    <p class="feature__tittle">Сайд-скиллы</p>
+    <button class="feature__button" data-feature="side" type="button">
+      Раскрыть все
+    </button>
+    <ul class="feature__list">
+      <li class="feature__item">
+        <details class="feature__dropdown feature__dropdown--side">
+          <summary class="feature__summary">Testing/Debugging</summary>
+          <div class="feature__content">
+            <p class="feature__text">
+              Владею навыками ручного тестирования и отладки кода, что
+              позволяет мне обеспечивать корректную работу приложений.
+              Умею выявлять проблемы и предлагать решения, что
+              способствует улучшению качества разрабатываемого
+              программного обеспечения.
+            </p>
+          </div>
+        </details>
+      </li>
+      <li class="feature__item">
+        <details class="feature__dropdown feature__dropdown--side">
+          <summary class="feature__summary">
+            Web Accessibility (a11y)
+          </summary>
+          <div class="feature__content">
+            <p class="feature__text">
+              Обладаю базовым пониманием принципов доступности
+              веб-контента (a11y), что позволяет мне создавать более
+              инклюзивные и удобные для пользователей интерфейсы. Знаю
+              основные рекомендации и стандарты, такие как WCAG, и
+              стремлюсь применять их в своей работе.
+            </p>
+          </div>
+        </details>
+      </li>
+      <li class="feature__item">
+        <details class="feature__dropdown feature__dropdown--side">
+          <summary class="feature__summary">UI/UX Design</summary>
+          <div class="feature__content">
+            <p class="feature__text">
+              Обладаю базовым пониманием основ дизайна пользовательского
+              интерфейса (UI) и пользовательского опыта (UX). Знаю
+              ключевые принципы, которые помогают создавать интуитивно
+              понятные и привлекательные интерфейсы, ориентированные на
+              потребности пользователей.
+            </p>
+          </div>
+        </details>
+      </li>
+      <li class="feature__item">
+        <details class="feature__dropdown feature__dropdown--side">
+          <summary class="feature__summary">SEO</summary>
+          <div class="feature__content">
+            <p class="feature__text">
+              Имею представление о принципах поисковой оптимизации (SEO)
+              и понимаю, как они влияют на видимость сайтов в поисковых
+              системах. Знаю основные методы, включая оптимизацию
+              метатегов, контента и структуры сайта для повышения его
+              ранжирования.
+            </p>
+          </div>
+        </details>
+      </li>
+      <li class="feature__item">
+        <details class="feature__dropdown feature__dropdown--side">
+          <summary class="feature__summary">Английский язык</summary>
+          <div class="feature__content">
+            <p class="feature__text">
+              Мой уровень английского языка — Intermediate. Я способен
+              читать техническую документацию и смотреть некоторые
+              обучающие видео на английском. Это полезный навык в
+              проектах, особенно когда информацию на русском языке найти
+              не удается.
+            </p>
+          </div>
+        </details>
+      </li>
+    </ul>
+  </div>
+</section>
+
+Styleguide Details
+*/
+.features {
+  max-width: 1480px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+@media (min-width: 1280px) {
+  .features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2.5em;
+    grid-template-areas: "header header" "feature-side feature-soft";
+  }
+}
+
+.features__header {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+@media (min-width: 768px) {
+  .features__header {
+    grid-area: header;
+  }
+}
+
+@media (min-width: 1280px) {
+  .feature-side {
+    grid-area: feature-side;
+  }
+}
+
+@media (min-width: 1280px) {
+  .feature-soft {
+    grid-area: feature-soft;
+  }
+}
+
+.feature + .feature {
+  margin-top: 2em;
+}
+@media (min-width: 1280px) {
+  .feature + .feature {
+    margin-top: 0;
+  }
+}
+
+.feature {
+  border-radius: 1.4em;
+  padding: 1.5em 0.7em 1em;
+  background-color: #5b3f8d;
+}
+
+.feature__tittle {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin: 0 0.3em 0.15em;
+  color: #fff;
+}
+
+.feature__button {
+  display: block;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px dashed #fff;
+  margin: 0 auto;
+  margin-bottom: 1.2em;
+  color: #fff;
+  cursor: pointer;
+}
+
+.feature__button:hover {
+  color: #be87e6;
+  border-color: #be87e6;
+}
+
+.feature__list {
+  list-style: none;
+  padding: 0;
+  margin: 0.7em 0 0 0;
+}
+
+.feature__list .feature__item + .feature__item {
+  margin-top: 0.5em;
+}
+
+.feature__dropdown {
+  border-radius: 0.7em;
+  padding: 0.1em;
+  background-color: #d9e4f5;
+}
+
+.feature__summary {
+  text-align: left;
+  position: relative;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0.3em 0.2em;
+  font-size: 1.05rem;
+  color: #5b3f8d;
+  transition: color 0.3s;
+}
+
+.feature__summary:hover {
+  color: #be87e6;
+}
+
+.feature__summary::marker {
+  content: " ";
+}
+
+.feature__summary.expended::before {
+  transform: rotate(90deg) translateX(-50%);
+}
+
+.feature__content {
+  padding: 0.3em;
+  border-radius: 0.7em;
+  background-color: #d9e4f5;
+}
+
+.feature__text {
+  margin: 0 0.6em 0.4em 0.6em;
+  color: #5b3f8d;
+}

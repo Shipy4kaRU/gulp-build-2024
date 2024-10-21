@@ -1,0 +1,110 @@
+@charset "UTF-8";
+/*
+Navigation
+
+Базовые стили для адаптивной навигационной панели с всплывающей кнопкой меню на мобильных устройствах.
+
+Markup:
+<nav class="nav">
+  <div class="nav__btn-wrapper">
+    <button class="nav__btn">
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
+  </div>
+  <div class="nav__list-container">
+    <ul class="nav__list nav--close">
+      <li class="nav__item">
+        <a href="#" class="nav__link">Главная</a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link">Меню</a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link">Контакты</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+Styleguide Navigation
+*/
+.nav {
+  display: block;
+  position: relative;
+  align-items: center;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .nav {
+    display: flex;
+  }
+}
+
+@media (max-width: 767.9px) {
+  .nav--close {
+    display: none;
+  }
+}
+
+.nav__list {
+  list-style: none;
+  width: max-content;
+  margin: 0;
+  padding: 1em 0 0 0;
+}
+@media (min-width: 768px) {
+  .nav__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.nav__item + .nav__item {
+  margin-top: 0.5em;
+}
+@media (min-width: 768px) {
+  .nav__item + .nav__item {
+    margin: 0 0 0 0.9rem;
+  }
+}
+
+.nav__link {
+  text-decoration: none;
+  color: rgb(120, 53, 196);
+  transition: color 0.25s;
+}
+
+.nav__link:hover {
+  color: rgb(148, 123, 174);
+}
+
+.nav__link:active {
+  color: rgb(34, 10, 61);
+}
+
+.nav__btn {
+  position: absolute;
+  width: 11px;
+  height: 10px;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  display: flex;
+}
+@media (min-width: 768px) {
+  .nav__btn {
+    display: none;
+  }
+}
+
+.nav__btn::before {
+  content: " ";
+  width: 11px;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  box-shadow: 0 3px 0 0 black, 0 6px 0 0 black;
+}
