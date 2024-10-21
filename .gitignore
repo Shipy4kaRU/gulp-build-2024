@@ -2,3 +2,4 @@
 /dist
 package-lock.json
 gulp-build.zip
+src/styleguide
