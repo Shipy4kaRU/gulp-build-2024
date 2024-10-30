@@ -63,7 +63,6 @@ Also install the Git version control system. Git is not required for the assembl
 
 - ["@babel/core"](https://www.npmjs.com/package/@babel/core): The core of Babel
 - ["@babel/preset-env"](https://www.npmjs.com/package/@babel/preset-env): Preset for Babel compilation
-- ['@hidoo/gulp-task-build-styleguide-kss'] (https://www.npmjs.com/package/kss?activeTab=dependents): This is a Node.js implementation of KSS, “documentation syntax for CSS”
 - ["browser-sync"](https://www.npmjs.com/package/browser-sync): Automatic updating of the site when files are changed
 - ["del"](https://www.npmjs.com/package/del): Deleting directories and files
 - ["gulp"](https://www.npmjs.com/package/gulp): Gulp Collector

@@ -63,7 +63,6 @@
 
 - ["@babel/core"](https://www.npmjs.com/package/@babel/core): Ядро Babel
 - ["@babel/preset-env"](https://www.npmjs.com/package/@babel/preset-env): Пресет для компиляции Babel
-- ['@hidoo/gulp-task-build-styleguide-kss'] (https://www.npmjs.com/package/kss?activeTab=dependents): Это Node.js реализация KSS, "синтаксиса документации для CSS"
 - ["browser-sync"](https://www.npmjs.com/package/browser-sync): Автоматическое обновление сайта при изменении файлов
 - ["del"](https://www.npmjs.com/package/del): Удаление каталогов и файлов
 - ["gulp"](https://www.npmjs.com/package/gulp): Сборщик Gulp
