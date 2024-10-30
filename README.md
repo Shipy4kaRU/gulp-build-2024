@@ -5,6 +5,7 @@
   <p align="center"><strong>Easy assembly for Gulp</strong></p>
 </p>   
  <p align="center">Can be used as a basis for creating your own assembly</p>
+ <p align="center">+ little «Styleguide»</p>
 </p>
 
 ---
