@@ -55,9 +55,9 @@ Also install the Git version control system. Git is not required for the assembl
 5. Run the command: gulp (run the default task)
 6. Coding and enjoying the automatic build of the project.
 
-##### At startup, in addition to the assembly, the “Styleguide” will be launched, where in tab 0. Overview will be its description. Below is the necessary structure of the library files. To understand it better - you can look through the styleguide files I have already created.
+#### At startup, in addition to the assembly, the “Styleguide” will be launched, where in tab 0. Overview will be its description. Below is the necessary structure of the library files. To understand it better - you can look through the styleguide files I have already created.
 
-![Изображение](./library-diagram.png "styleguide structure")
+![Изображение](./styleguide-diagram.png "Styleguide structure")
 
 ## NPM packages used:
 
