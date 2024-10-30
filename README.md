@@ -30,14 +30,16 @@
 - Starting template index.html with attached style file, normalize.css and a js file connected for a quick start of layout
 - ES6 modules support
 - Adding a theme (dark/light) support
+- “Components Library”
+- Using .webmanifest for favicons
 
 ## The structure of the src project folder:
 
-![Изображение](./src-diagram.png "Логотип Markdown")
+![Изображение](./src-diagram.png "src structure")
 
 ## The structure of the dist project folder:
 
-![Изображение](./dist-diagram.png "Логотип Markdown")
+![Изображение](./dist-diagram.png "dist structure")
 
 ## Starting the build:
 
@@ -52,10 +54,15 @@ Also install the Git version control system. Git is not required for the assembl
 5. Run the command: gulp (run the default task)
 6. Coding and enjoying the automatic build of the project.
 
+##### At startup, in addition to the assembly, the “Styleguide” will be launched, where in tab 0. Overview will be its description. Below is the necessary structure of the library files. To understand it better - you can look through the styleguide files I have already created.
+
+![Изображение](./library-diagram.png "styleguide structure")
+
 ## NPM packages used:
 
 - ["@babel/core"](https://www.npmjs.com/package/@babel/core): The core of Babel
 - ["@babel/preset-env"](https://www.npmjs.com/package/@babel/preset-env): Preset for Babel compilation
+- ['@hidoo/gulp-task-build-styleguide-kss'] (https://www.npmjs.com/package/kss?activeTab=dependents): This is a Node.js implementation of KSS, “documentation syntax for CSS”
 - ["browser-sync"](https://www.npmjs.com/package/browser-sync): Automatic updating of the site when files are changed
 - ["del"](https://www.npmjs.com/package/del): Deleting directories and files
 - ["gulp"](https://www.npmjs.com/package/gulp): Gulp Collector
@@ -63,20 +70,24 @@ Also install the Git version control system. Git is not required for the assembl
 - ["gulp-babel"](https://www.npmjs.com/package/gulp-babel): Converts JavaScript to the old standard
 - ["gulp-clean-css"](https://www.npmjs.com/package/gulp-clean-css): Minification and optimization of CSS files
 - ["gulp-concat"](https://www.npmjs.com/package/gulp-concat): Combining multiple files into one
+- ["gulp-flatten"](https://www.npmjs.com/package/gulp-flatten): Deleting or replacing relative file paths
 - ["gulp-fonter"](https://www.npmjs.com/package/gulp-fonter): Converting fonts to .ttf and woff formats
 - ["gulp-htmlmin"](https://www.npmjs.com/package/gulp-htmlmin): Minification of HTML files
 - ["gulp-imagemin"](https://www.npmjs.com/package/gulp-imagemin): Image Compression
 - ["gulp-newer"](https://www.npmjs.com/package/gulp-newer): Tracking only new files
-- ["gulp-flatten"](https://www.npmjs.com/package/gulp-flatten): Remove or replace relative path for files
 - ["gulp-rename"](https://www.npmjs.com/package/gulp-rename): Renaming files
+- ["gulp-replace"](https://www.npmjs.com/package/gulp-replace): String replacement plugin for gulp
 - ["gulp-sass"](https://www.npmjs.com/package/gulp-sass): Compilation of Sass and Scss files
 - ["gulp-size"](https://www.npmjs.com/search?q=gulp-size): Displaying information about file sizes in the terminal
 - ["gulp-sourcemaps"](https://www.npmjs.com/package/gulp-sourcemaps): A code line map for developer tools
+- ["gulp-transform"](https://www.npmjs.com/package/gulp-transform): Gulp plugin for applying custom transformations to file contents
 - ["gulp-ttf2woff2"](https://www.npmjs.com/package/gulp-ttf2woff2): Converting fonts from .ttf format to woff2
 - ["gulp-uglify"](https://www.npmjs.com/package/gulp-uglify): Compression and optimization of JavaScript code
-- ["gulp-zip"](https://www.npmjs.com/package/gulp-zip): Creation a .zip archive
-- ["sass"](https://www.npmjs.com/package/sass): The Sass compiler
 - ["gulp-webp"](https://www.npmjs.com/package/gulp-webp): Convert images to WebP
+- ["gulp-zip"](https://www.npmjs.com/package/gulp-zip): Creation a .zip archive
+- ['kss'](https://www.npmjs.com/package/kss): This is a Node.js implementation of KSS, “documentation syntax for CSS”
+- ['live-server'](https://www.npmjs.com/package/live-server): This is a little development server with live reload capability
+- ["sass"](https://www.npmjs.com/package/sass): The Sass compiler
 
 ## Build Commands:
 

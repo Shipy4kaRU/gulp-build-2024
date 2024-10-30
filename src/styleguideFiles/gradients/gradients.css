@@ -1,0 +1,55 @@
+@charset "UTF-8";
+/*
+Gradients
+
+Градиненты бывают разные. Ниже вы можете просмотреть основные варианты. Однако среди такого разнообразия вариантов чаще всего в реальных проектах используется лишь простые градиенты.
+
+Markup:
+<div class="gradient {{modifier_class}}">
+</div>
+
+.gradient--flag - цветовые узлы, расположенные на одной цветовой позиции
+.gradient--repeat - повторяющийся градиент
+.gradient--ellips - радиальный градиент в виде эллипса
+.gradient--circle - радиальный градиент в виде круга
+.gradient--circle-left - градиент, расположенный на расстоянии 25% от верхнего и левого краев, размером 3em
+.gradient--circle-center - радиальный градиент с явно заданными цветовыми узлами
+.gradient--circle-repeat - повторяющийся радиальный градиент с эффектом полос
+
+Styleguide Gradients
+*/
+.gradient {
+  height: 100px;
+  width: 200px;
+  background-image: linear-gradient(90deg, red, white, blue);
+}
+
+.gradient--flag {
+  background-image: linear-gradient(90deg, red 33%, rgb(231, 231, 231) 33%, rgb(231, 231, 231) 66%, blue 66%);
+}
+
+.gradient--repeat {
+  height: 1em;
+  background-image: repeating-linear-gradient(-45deg, #57b, #57b 10px, #148 10px, #148 20px);
+  border-radius: 0.3em;
+}
+
+.gradient--ellips {
+  background-image: radial-gradient(white, midnightblue);
+}
+
+.gradient--circle {
+  background-image: radial-gradient(circle, white, midnightblue);
+}
+
+.gradient--circle-left {
+  background-image: radial-gradient(3em at 25% 25%, white, midnightblue);
+}
+
+.gradient--circle-center {
+  background-image: radial-gradient(circle, midnightblue 0%, white 75%, red 100%);
+}
+
+.gradient--circle-repeat {
+  background-image: repeating-radial-gradient(circle, midnightblue 0, midnightblue 1em, white 1em, white 2em);
+}

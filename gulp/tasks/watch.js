@@ -1,6 +1,7 @@
 //Импорт задач
 import { html } from "./html.js";
 import { styles } from "./styles.js";
+import { colorTheme } from "./styles.js";
 import { scripts } from "./scripts.js";
 import { img } from "./img.js";
 //import { kssConverter } from "./kss.js";
@@ -24,6 +25,7 @@ export function watch() {
     app.path.src.allstyles,
     styles.bind(this, app.path.src.styles, app.path.dist.styles)
   );
+  app.gulp.watch(app.path.src.styleTheme, colorTheme);
   app.gulp.watch(
     [
       `${app.path.src.styleguideFiles}/**/*.{scss,js,md}`,
