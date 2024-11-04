@@ -31,7 +31,7 @@
 - Starting template index.html with attached style file, normalize.css and a js file connected for a quick start of layout
 - ES6 modules support
 - Adding a theme (dark/light) support
-- “Components Library”
+- Styleguide
 - Using .webmanifest for favicons
 
 ## The structure of the src project folder:
