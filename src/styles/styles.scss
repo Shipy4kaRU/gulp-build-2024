@@ -1,3 +1,13 @@
 body {
   background-color: white;
 }
+
+// styles.scss
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+
+// Импортируйте только нужные компоненты
+@import "bootstrap/scss/grid"; // Сетка
+@import "bootstrap/scss/buttons"; // Кнопки
+// Добавьте другие компоненты по мере необходимости
