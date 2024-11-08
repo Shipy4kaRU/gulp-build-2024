@@ -1,0 +1,179 @@
+@charset "UTF-8";
+/*
+Surfacing-carousel
+
+Стили примера 3d-симуляции карусели с эффектом затемнения в default состоянии и осветления при :hover эффекте.
+
+Markup:
+    <main>
+      <section class="carousel">
+        <ul class="carousel__list surfacing-list">
+          <li class="surfacing-list__el">
+            <img
+              class="surfacing-img"
+              src="\styleguideFiles\3d transformation\img\arlecino.webp"
+              alt="Карточка Ареликино"
+            />
+          </li>
+          <li class="surfacing-list__el">
+            <img
+              class="surfacing-img"
+              src="\styleguideFiles\3d transformation\img\barbara.webp"
+              alt="Карточка Барбара"
+            />
+          </li>
+          <li class="surfacing-list__el">
+            <img
+              class="surfacing-img"
+              src="\styleguideFiles\3d transformation\img/raiden.webp"
+              alt="Карточка Райден"
+            />
+          </li>
+          <li class="surfacing-list__el">
+            <img
+              class="surfacing-img"
+              src="\styleguideFiles\3d transformation/img/ya-miko.webp"
+              alt="Карточка Яэ Мико"
+            />
+          </li>
+          <li class="surfacing-list__el">
+            <img
+              class="surfacing-img"
+              src="\styleguideFiles\3d transformation/img/tartalia.webp"
+              alt="Карточка Тарталья"
+            />
+          </li>
+          <li class="surfacing-list__el">
+            <img
+              class="surfacing-img"
+              src="\styleguideFiles\3d transformation/img/venti.webp"
+              alt="Карточка Венти"
+            />
+          </li>
+          <li class="surfacing-list__el">
+            <img
+              class="surfacing-img"
+              src="\styleguideFiles\3d transformation/img/al-haitam.webp"
+              alt="Карточка Аль Хайтам"
+            />
+          </li>
+          <li class="surfacing-list__el">
+            <img
+              class="surfacing-img"
+              src="\styleguideFiles\3d transformation/img/saharoza.webp"
+              alt="Карточка Сахароза"
+            />
+          </li>
+          <li class="surfacing-list__el">
+            <img
+              class="surfacing-img"
+              src="\styleguideFiles\3d transformation/img/k-cin.webp"
+              alt="Карточка Кэ Цин"
+            />
+          </li>
+          <li class="surfacing-list__el">
+            <img
+              class="surfacing-img"
+              src="\styleguideFiles\3d transformation/img/gan-ui.webp"
+              alt="Карточка Гань Юй"
+            />
+          </li>
+          <li class="surfacing-list__el">
+            <img
+              class="surfacing-img"
+              src="\styleguideFiles\3d transformation/img/clorinda.webp"
+              alt="Карточка Клоринда"
+            />
+          </li>
+        </ul>
+      </section>
+    </main>
+
+Styleguide 3d-Transformation.Surfacing-carousel
+*/
+main {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.surfacing-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.surfacing-list__el {
+  margin: 0;
+  padding: 0;
+  width: 5em;
+  height: 8em;
+  overflow: hidden;
+}
+
+.surfacing-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.surfacing-list__el + .surfacing-list__el {
+  margin-left: 5px;
+}
+
+/*Тут уже стили по самому surfacing'y*/
+.surfacing-list {
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+}
+
+.surfacing-list__el {
+  transition: 0.5s;
+  filter: brightness(0);
+}
+
+.surfacing-list__el:hover {
+  filter: brightness(1);
+  transform: translateZ(200px);
+}
+
+/* Если между ними почему-то что-то есть, хах, то естественно придется использовать класс */
+.surfacing-list__el:hover + * {
+  filter: brightness(0.6);
+  transform: translateZ(150px) rotateY(40deg);
+}
+
+.surfacing-list__el:hover + * + * {
+  filter: brightness(0.3);
+  transform: translateZ(75px) rotateY(20deg);
+}
+
+.surfacing-list__el:hover + * + * + * {
+  filter: brightness(0.15);
+  transform: translateZ(30px) rotateY(10deg);
+}
+
+.surfacing-list__el:has(+ *:hover) {
+  filter: brightness(0.6);
+  transform: translateZ(150px) rotateY(-40deg);
+}
+
+.surfacing-list__el:has(+ * + *:hover) {
+  filter: brightness(0.3);
+  transform: translateZ(75px) rotateY(-20deg);
+}
+
+.surfacing-list__el:has(+ * + * + *:hover) {
+  filter: brightness(0.15);
+  transform: translateZ(30px) rotateY(-10deg);
+}
