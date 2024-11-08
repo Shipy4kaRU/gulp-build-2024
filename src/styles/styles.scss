@@ -2,12 +2,4 @@ body {
   background-color: white;
 }
 
-// styles.scss
-@import "bootstrap/scss/functions";
-@import "bootstrap/scss/variables";
-@import "bootstrap/scss/mixins";
-
-// Импортируйте только нужные компоненты
-@import "bootstrap/scss/grid"; // Сетка
-@import "bootstrap/scss/buttons"; // Кнопки
-// Добавьте другие компоненты по мере необходимости
+/*Вы должны начинать использовать @use или @forward вместо @import ('') - потому что всеми привычный обычный импорт в версии 3.0.0 sass будет удален из функиональности. Пока что это может использоваться, но в консоли уже сейчас можно прослеживать warning сообщения от Sass об удалении импортов в новой версии препроцессора.*/
